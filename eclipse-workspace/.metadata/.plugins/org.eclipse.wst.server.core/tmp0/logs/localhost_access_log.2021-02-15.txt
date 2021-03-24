@@ -1,0 +1,14 @@
+127.0.0.1 - - [15/Feb/2021:17:46:12 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [15/Feb/2021:17:46:15 +0530] "GET /AdvancedJava/form.jsp HTTP/1.1" 200 2056
+0:0:0:0:0:0:0:1 - - [15/Feb/2021:17:46:15 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [15/Feb/2021:17:54:54 +0530] "GET /AdvancedJava/form.jsp HTTP/1.1" 200 2333
+0:0:0:0:0:0:0:1 - - [15/Feb/2021:17:54:54 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [15/Feb/2021:17:55:48 +0530] "GET /AdvancedJava/form.jsp HTTP/1.1" 200 2333
+0:0:0:0:0:0:0:1 - - [15/Feb/2021:17:56:05 +0530] "GET /AdvancedJava/form.jsp HTTP/1.1" 200 2333
+0:0:0:0:0:0:0:1 - - [15/Feb/2021:17:56:06 +0530] "GET /AdvancedJava/form.jsp HTTP/1.1" 200 2333
+0:0:0:0:0:0:0:1 - - [15/Feb/2021:17:57:15 +0530] "GET /AdvancedJava/form.jsp HTTP/1.1" 200 2333
+0:0:0:0:0:0:0:1 - - [15/Feb/2021:17:58:06 +0530] "GET /AdvancedJava/form.jsp HTTP/1.1" 200 2356
+0:0:0:0:0:0:0:1 - - [15/Feb/2021:17:58:14 +0530] "GET /AdvancedJava/form.jsp HTTP/1.1" 200 2356
+0:0:0:0:0:0:0:1 - - [15/Feb/2021:17:58:32 +0530] "GET /AdvancedJava/form.jsp HTTP/1.1" 200 2356
+0:0:0:0:0:0:0:1 - - [15/Feb/2021:17:58:54 +0530] "GET /AdvancedJava/form.jsp HTTP/1.1" 200 2356
+0:0:0:0:0:0:0:1 - - [15/Feb/2021:17:59:20 +0530] "GET /AdvancedJava/form.jsp HTTP/1.1" 200 2355

@@ -1,0 +1,13 @@
+<?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>
+<aiml>
+    <category><pattern>WHAT IS JAVA</pattern>
+        <template>JAVA IS AN OBJECT ORIENTED PROGRAMING LANGUAGE</template>
+    </category>
+    <category><pattern>WHAT IS CHATBOT</pattern>
+        <template>Chatbot is a computer program designed to simulate 
+        conversation with human users, especially over the Internet.</template>
+    </category>
+    <category><pattern>WHAT IS INDIA</pattern>
+        <template>wonderful country.</template>
+    </category>
+</aiml>

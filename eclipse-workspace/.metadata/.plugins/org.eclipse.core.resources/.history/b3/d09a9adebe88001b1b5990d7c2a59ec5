@@ -1,0 +1,21 @@
+package com.dao;
+
+import java.sql.Connection;
+
+import com.util.CreateUtil;
+
+public class HelpDeskDao {
+	public <List> gethelp(int uid)
+	{
+		try
+		{
+		Connection conn=CreateUtil.createConnection();	
+				}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return list;
+	}
+   
+}

@@ -1,0 +1,98 @@
+Language model created by QuickLM on Mon Mar 22 04:38:52 EDT 2021
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 8 sentences and 21 words
+
+\data\
+ngram 1=21
+ngram 2=29
+ngram 3=25
+
+\1-grams:
+-1.0512 </s> -0.3010
+-1.0512 <s> -0.2606
+-1.9542 A -0.2962
+-1.9542 ARE -0.2863
+-1.9542 BORN -0.2606
+-1.9542 CHATBOT -0.2606
+-1.9542 DO -0.2863
+-1.9542 GIRLFRIEND -0.2606
+-1.9542 HAVE -0.2962
+-1.9542 INDIA -0.2606
+-1.2553 IS -0.2762
+-1.9542 JAVA -0.2606
+-1.9542 MARRIED -0.2606
+-1.9542 NAME -0.2606
+-1.9542 THE -0.2962
+-1.9542 TIME -0.2606
+-1.9542 WERE -0.2863
+-1.2553 WHAT -0.2762
+-1.9542 WHEN -0.2962
+-1.4771 YOU -0.2863
+-1.9542 YOUR -0.2962
+
+\2-grams:
+-1.2041 <s> ARE 0.0000
+-1.2041 <s> DO 0.0000
+-0.5051 <s> WHAT 0.0000
+-1.2041 <s> WHEN 0.0000
+-0.3010 A GIRLFRIEND 0.0000
+-0.3010 ARE YOU -0.2218
+-0.3010 BORN </s> -0.3010
+-0.3010 CHATBOT </s> -0.3010
+-0.3010 DO YOU -0.2218
+-0.3010 GIRLFRIEND </s> -0.3010
+-0.3010 HAVE A 0.0000
+-0.3010 INDIA </s> -0.3010
+-1.0000 IS CHATBOT 0.0000
+-1.0000 IS INDIA 0.0000
+-1.0000 IS JAVA 0.0000
+-1.0000 IS THE 0.0000
+-1.0000 IS YOUR 0.0000
+-0.3010 JAVA </s> -0.3010
+-0.3010 MARRIED </s> -0.3010
+-0.3010 NAME </s> -0.3010
+-0.3010 THE TIME 0.0000
+-0.3010 TIME </s> -0.3010
+-0.3010 WERE YOU -0.2218
+-0.3010 WHAT IS 0.0000
+-0.3010 WHEN WERE 0.0000
+-0.7782 YOU BORN 0.0000
+-0.7782 YOU HAVE 0.0000
+-0.7782 YOU MARRIED 0.0000
+-0.3010 YOUR NAME 0.0000
+
+\3-grams:
+-0.3010 <s> ARE YOU
+-0.3010 <s> DO YOU
+-0.3010 <s> WHAT IS
+-0.3010 <s> WHEN WERE
+-0.3010 A GIRLFRIEND </s>
+-0.3010 ARE YOU MARRIED
+-0.3010 DO YOU HAVE
+-0.3010 HAVE A GIRLFRIEND
+-0.3010 IS CHATBOT </s>
+-0.3010 IS INDIA </s>
+-0.3010 IS JAVA </s>
+-0.3010 IS THE TIME
+-0.3010 IS YOUR NAME
+-0.3010 THE TIME </s>
+-0.3010 WERE YOU BORN
+-1.0000 WHAT IS CHATBOT
+-1.0000 WHAT IS INDIA
+-1.0000 WHAT IS JAVA
+-1.0000 WHAT IS THE
+-1.0000 WHAT IS YOUR
+-0.3010 WHEN WERE YOU
+-0.3010 YOU BORN </s>
+-0.3010 YOU HAVE A
+-0.3010 YOU MARRIED </s>
+-0.3010 YOUR NAME </s>
+
+\end\

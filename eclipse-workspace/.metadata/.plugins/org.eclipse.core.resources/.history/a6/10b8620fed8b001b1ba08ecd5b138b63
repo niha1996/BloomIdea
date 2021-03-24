@@ -1,0 +1,18 @@
+package com.dao;
+
+import java.sql.Connection;
+
+import com.bean.Chatbot;
+import com.util.CreateUtil;
+
+public class ChatBotDao {
+
+	public static void insert(Chatbot chatbot) {
+		try
+		{
+			Connection conn=CreateUtil.createConnection();
+		}
+		
+	}
+
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="false"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value=""/>
+		<list key="findhistory">
+			<item value="psycho"/>
+			<item value="shawshank"/>
+			<item value="lister-list"/>
+			<item value="table"/>
+			<item value="covid19-container"/>
+			<item value="div class=&quot;mw-parser-output&quot;"/>
+			<item value="mw-parser-output"/>
+			<item value="mw"/>
+			<item value="&lt;a href"/>
+			<item value="message"/>
+			<item value="a href"/>
+			<item value="action"/>
+			<item value="ionactt"/>
+			<item value="type a message"/>
+			<item value="start chat"/>
+		</list>
+		<list key="replacehistory">
+			<item value="&gt;"/>
+			<item value="&lt;"/>
+			<item value="&amp;"/>
+			<item value="&quot;"/>
+			<item value="bike_y"/>
+			<item value="bike_x"/>
+			<item value="user_x"/>
+			<item value="user_y"/>
+			<item value="Cart"/>
+			<item value="jsp"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="205"/>
+		<item key="DIALOG_Y_ORIGIN" value="167"/>
+		<item key="DIALOG_WIDTH" value="385"/>
+		<item key="DIALOG_HEIGHT" value="523"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

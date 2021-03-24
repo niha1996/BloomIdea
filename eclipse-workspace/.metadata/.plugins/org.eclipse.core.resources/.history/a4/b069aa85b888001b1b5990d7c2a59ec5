@@ -1,0 +1,9 @@
+package com.dao;
+
+public class HelpDeskDao {
+	public <List> gethelp(int uid)
+	{
+		return list;
+	}
+   
+}

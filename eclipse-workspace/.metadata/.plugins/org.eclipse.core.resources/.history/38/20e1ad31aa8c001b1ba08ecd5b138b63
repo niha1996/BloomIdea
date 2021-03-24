@@ -1,0 +1,30 @@
+import java.io.IOException;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+public class CoronaInfo {
+	public static void main(String args[])
+	{
+		try
+		{
+			Document doc=Jsoup.connect("https://www.imdb.com/search/title/?groups=top_250&sort=user_rating").userAgent("Mozilla/83.0").get();
+		    System.out.println(doc);
+			Elements temp=doc.select("d.lister-list");
+		    
+		    for(Element states:temp)
+		    {
+		    	System.out.println(states.getElementsByTag("a").first().text());
+		    	
+		    }
+				
+	}
+		catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+
+}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;OIUI.jsp&apos; to &apos;Bank&apos;" description="Move &apos;OIUI.jsp&apos; to &apos;Bank&apos;" destination="/Bank" element1="/AdvancedJava/WebContent/OIUI.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1613218430622" updateReferences="true"/>
+</session>

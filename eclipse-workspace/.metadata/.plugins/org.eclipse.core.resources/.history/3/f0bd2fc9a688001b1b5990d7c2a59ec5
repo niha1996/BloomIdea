@@ -1,0 +1,6 @@
+<%@page import="com.dao.CartlistDao"%>
+<%@page import="com.dao.WishlistDao"%>
+<% int wid=Integer.parseInt(request.getParameter("wid"));
+   CartlistDao.removefromcartlist(wid);
+   response.sendRedirect("mywishlist.jsp");
+ %>

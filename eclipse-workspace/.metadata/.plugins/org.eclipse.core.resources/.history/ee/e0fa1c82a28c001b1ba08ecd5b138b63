@@ -1,0 +1,29 @@
+import java.io.IOException;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+public class CoronaInfo {
+	public static void main(String args[])
+	{
+		try
+		{
+			Document doc=Jsoup.connect("https://en.wikipedia.org/wiki/Template:COVID-19_pandemic_data/India_medical_cases_by_state_and_union_territory").userAgent("Mozilla/5.0 (Windows NT 10.0; WOW64; rv:70.0) Gecko/20100101 Firefox/70.0").referrer("http://www.google.com") .get();
+		    Elements temp=doc.select("div.covid19-container");
+		    System.out.println("Name"+""+"Cases"+""+"Deaths"+""+"Recovery"+""+"Active");
+		    for(Element states:temp)
+		    {
+		    	System.out.println(states.getElementById("a").text());
+		    	
+		    }
+				
+	}
+		catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+
+}
+}

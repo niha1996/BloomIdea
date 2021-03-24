@@ -1,0 +1,13 @@
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+
+public class CoronaInfo {
+	public static void main(String args[])
+	{
+		try
+		{
+			Document doc=Jsoup.connect("https://en.wikipedia.org/wiki/Template:COVID-19_pandemic_data/India_medical_cases_by_state_and_union_territory");
+		}
+	}
+
+}

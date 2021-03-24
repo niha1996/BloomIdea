@@ -1,0 +1,29 @@
+package com.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.bean.Chatbot;
+import com.dao.ChatBotDao;
+
+
+@WebServlet("/Chatbotcontroller")
+public class Chatbotcontroller extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String action=request.getParameter("action");
+		if(action.equalsIgnoreCase("chatbotinput"))
+		{
+			Chatbot chatbot=new Chatbot();
+			chatbot.setUid(Integer.parseInt(request.getParameter("usertype")));
+			chatbot.setInput(request.getParameter("input"));
+			ChatBotDao.insert(chatbot);
+		}
+		doPost(request, response);
+	}
+
+}

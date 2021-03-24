@@ -1,0 +1,12 @@
+package com.dao;
+
+import com.bean.Chatbot;
+
+public class ChatBotDao {
+
+	public static void insert(Chatbot chatbot) {
+		
+		
+	}
+
+}

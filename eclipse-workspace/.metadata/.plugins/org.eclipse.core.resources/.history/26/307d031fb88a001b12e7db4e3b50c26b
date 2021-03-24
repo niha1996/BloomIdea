@@ -1,0 +1,99 @@
+package in.AIML.Chatbot;
+
+
+import java.io.File;
+import java.util.Locale;
+
+import org.alicebot.ab.Bot;
+import org.alicebot.ab.Chat;
+import org.alicebot.ab.History;
+import org.alicebot.ab.MagicBooleans;
+import org.alicebot.ab.MagicStrings;
+import org.alicebot.ab.utils.IOUtils;
+
+import edu.cmu.sphinx.api.Configuration;
+
+import javax.speech.Engine;
+import javax.speech.Central;
+import javax.speech.synthesis.SynthesizerModeDesc;
+import javax.speech.synthesis.Synthesizer;
+public class Chatbot {
+    private static final boolean TRACE_MODE = false;
+    static String botName = "Bloom";
+     
+     
+    public static void main(String[] args) {
+    	Configuration configuration=new Configuration();
+    	configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
+    	configuration.setDictionaryPath("");
+    	configuration.setLanguageModelPath("");
+    	
+        try {
+        	System.setProperty( 
+                    "freetts.voices", 
+                    "com.sun.speech.freetts.en.us"
+                        + ".cmu_us_kal.KevinVoiceDirectory"); 
+        	 Central.registerEngineCentral( 
+                     "com.sun.speech.freetts"
+                     + ".jsapi.FreeTTSEngineCentral"); 
+       
+                 // Create a Synthesizer 
+                 Synthesizer synthesizer 
+                     = Central.createSynthesizer( 
+                         new SynthesizerModeDesc(Locale.US)); 
+       
+                 // Allocate synthesizer 
+                 synthesizer.allocate(); 
+       
+                 // Resume Synthesizer 
+                 synthesizer.resume(); 
+            String resourcesPath = getResourcesPath();
+            System.out.println(resourcesPath);
+            MagicBooleans.trace_mode = TRACE_MODE;
+            Bot bot = new Bot("super", resourcesPath);
+            Chat chatSession = new Chat(bot);
+            bot.brain.nodeStats();
+            String textLine = "";
+ 
+            while(true) {
+                System.out.print("Human : ");
+                textLine = IOUtils.readInputTextLine();
+                if ((textLine == null) || (textLine.length() < 1))
+                    textLine = MagicStrings.null_input;
+                if (textLine.equals("q")) {
+                    System.exit(0);
+                } else if (textLine.equals("wq")) {
+                    bot.writeQuit();
+                    System.exit(0);
+                	 } else {
+                    String request = textLine;
+                    if (MagicBooleans.trace_mode)
+                        System.out.println("STATE=" + request + ":THAT=" + ((History) chatSession.thatHistory.get(0)).get(0) + ":TOPIC=" + chatSession.predicates.get("topic"));
+                    String response = chatSession.multisentenceRespond(request);
+                    while (response.contains("<"))
+                        response = response.replace("<", "<");
+                    while (response.contains(">"))
+                        response = response.replace(">", ">");
+                    synthesizer.speakPlainText(response,null);
+                    synthesizer.waitEngineState( 
+                            Synthesizer.QUEUE_EMPTY); 
+              
+                         
+                        
+                   
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+ 
+    private static String getResourcesPath() {
+        File currDir = new File(".");
+        String path = currDir.getAbsolutePath();
+        path = path.substring(0, path.length() - 2);
+        System.out.println(path);
+        String resourcesPath = path + File.separator + "src" + File.separator + "main" + File.separator + "resources";
+        return resourcesPath;
+    }
+}

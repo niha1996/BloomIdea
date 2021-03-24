@@ -1,0 +1,1 @@
+<%=int wid=Integer.parseInt(request.getParameter("wid"));%>
